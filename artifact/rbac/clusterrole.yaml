@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rudder-viewer
+rules:
+  - apiGroups: ["rudder.io"]
+    resources: ["sources", "destinations", "routes"]
+    verbs: ["get", "list"]

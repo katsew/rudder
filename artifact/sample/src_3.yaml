@@ -1,0 +1,11 @@
+apiVersion: "rudder.io/v1alpha1"
+kind: Source
+metadata:
+  name: grandmas-home
+  metadata:
+    labels:
+      whoLivesIn: grandma
+      canWalk: no
+spec:
+  ipRange: "xxx.xxx.xxx.xxx/32"
+  port: 2913

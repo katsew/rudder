@@ -1,0 +1,9 @@
+apiVersion: "rudder.io/v1alpha1"
+kind: Route
+metadata:
+  name: near-to-park
+spec:
+  dest: park
+  selector:
+    matchLabels:
+      canWalk: yes

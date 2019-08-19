@@ -1,0 +1,11 @@
+apiVersion: "rudder.io/v1alpha1"
+kind: Source
+metadata:
+  name: home
+  metadata:
+    labels:
+      whoLivesIn: me
+      canWalk: yes
+spec:
+  ipRange: "xxx.xxx.xxx.xxx/32"
+  port: 5398

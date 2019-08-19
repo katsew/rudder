@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: rudder-viewer
+subjects:
+  - kind: ServiceAccount
+    name: rudder-viewer
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: rudder-viewer
+  apiGroup: rbac.authorization.k8s.io
